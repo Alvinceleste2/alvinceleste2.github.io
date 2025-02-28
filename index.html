@@ -1,196 +1,61 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+<title> Álvaro Grande Blázquez | Personal Webpage </title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name=”description” content="Student at the Autonomous University of Madrid">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+  body,
+  h1 {
+    font-family: "Raleway", sans-serif font-size: 30px;
+  }
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Under Construction 🚧</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      text-align: center;
-      background: #1a1a1a;
-      color: #fff;
-      margin: 0;
-      padding: 0;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-    }
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
 
-    h1 {
-      font-size: 3em;
-      margin-bottom: 10px;
-    }
+  body,
+  html {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
 
-    p {
-      font-size: 1.2em;
-    }
+  .bgimg {
+    background: linear-gradient(to top right, #F28500 60%, #FF7F50 100%) !important;
+    border-radius: 40px;
+    min-height: 100%;
+    background-position: center;
+    background-size: cover;
+  }
+</style>
 
-    .countdown {
-      font-size: 2em;
-      margin-top: 20px;
-      font-weight: bold;
-    }
-
-    .social-links {
-      margin-top: 30px;
-    }
-
-    .social-links a {
-      color: #ffcc00;
-      text-decoration: none;
-      font-size: 1.5em;
-      margin: 0 15px;
-    }
-
-    .social-links a:hover {
-      color: #ff6600;
-    }
-
-    .footer {
-      margin-top: 50px;
-      font-size: 0.9em;
-      color: #999;
-    }
-  </style>
-</head>
-
-<body>
-
-  <h1>🚧 Coming Soon! 🚧</h1>
-  <p>We are working hard to bring you an amazing experience. Stay tuned!</p>
-
-  <div class="countdown" id="countdown">
-    Launching in: 10 days
-  </div>
-
-  <div class="social-links">
-    <a href="#" target="_blank">🔗 Facebook</a>
-    <a href="#" target="_blank">🔗 Twitter</a>
-    <a href="#" target="_blank">🔗 Instagram</a>
-  </div>
-
-  <div class="footer">
-    &copy; 2025 Your Company. All Rights Reserved.
-  </div>
-
-  <script>
-    // Countdown Timer
-    const targetDate = new Date();
-    targetDate.setDate(targetDate.getDate() + 10); // 10 days from now
-
-    function updateCountdown() {
-      const now = new Date();
-      const timeDiff = targetDate - now;
-
-      if (timeDiff <= 0) {
-        document.getElementById("countdown").innerHTML = "We're Live! 🚀";
-        return;
-      }
-
-      const days = Math.floor(timeDiff / (1000 * 60 * 60 * 24));
-      const hours = Math.floor((timeDiff / (1000 * 60 * 60)) % 24);
-      const minutes = Math.floor((timeDiff / (1000 * 60)) % 60);
-      const seconds = Math.floor((timeDiff / 1000) % 60);
-
-      document.getElementById("countdown").innerHTML =
-        `Launching in: ${days}d ${hours}h ${minutes}m ${seconds}s`;
-    }
-
-    setInterval(updateCountdown, 1000);
-    updateCountdown();
-  </script>
-
-</body>
-
-</html>
-
-How to Use?
-
-Copy and paste the code into an index.html file.
-Modify text, social media links, and colors as per your preference.
-Host it on your server to display the "Under Construction" page.
-
-Let me know if you need more customizations! 😃 🚀
-You said:
-No countdown
-ChatGPT said:
-
-Here's a simpler "Under Construction" HTML template without a countdown—just a clean, stylish page. 🚧✨
-Complete Code:
-
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Under Construction 🚧</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      text-align: center;
-      background: #1a1a1a;
-      color: #fff;
-      margin: 0;
-      padding: 0;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-    }
-
-    h1 {
-      font-size: 3em;
-      margin-bottom: 10px;
-    }
-
-    p {
-      font-size: 1.2em;
-      max-width: 600px;
-      line-height: 1.5;
-    }
-
-    .social-links {
-      margin-top: 30px;
-    }
-
-    .social-links a {
-      color: #ffcc00;
-      text-decoration: none;
-      font-size: 1.5em;
-      margin: 0 15px;
-    }
-
-    .social-links a:hover {
-      color: #ff6600;
-    }
-
-    .footer {
-      margin-top: 50px;
-      font-size: 0.9em;
-      color: #999;
-    }
-  </style>
-</head>
-
-<body>
-
-  <h1>🚧 Coming Soon! 🚧</h1>
-  <p>We are currently working on an awesome new experience. Stay tuned for updates!</p>
-
-  <div class="social-links">
-    <a href="#" target="_blank">🔗 Facebook</a>
-    <a href="#" target="_blank">🔗 Twitter</a>
-    <a href="#" target="_blank">🔗 Instagram</a>
-  </div>
-
-  <div class="footer">
-    &copy; 2025 Your Company. All Rights Reserved.
+<body class="w3-black">
+  <div class="w3-margin w3-round bgimg w3-display-container w3-animate-opacity w3-text-white">
+    <div class="w3-center w3-padding-large w3-xlarge">
+      <p style="font-size: 35px;"> <strong> <br> <br> <br> <br> Álvaro Grande Blázquez</strong> </p>
+    </div>
+    <div class="w3-display-middle">
+      <h1 class="w3-jumbo w3-animate-top">
+        <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+        <lottie-player src="https://assets5.lottiefiles.com/packages/lf20_PFlb1t.json" background="transparent"
+          speed="1" style="width: 280px; height: 280px;" loop autoplay></lottie-player>
+      </h1>
+      <h3 class="w3-center">
+        <p> <strong> Coming Soon </strong> </p>
+      </h3>
+      <hr class="w3-border-grey" style="margin:auto;width:40%">
+      <h3 class="w3-center"> <a href="https://www.linkedin.com/in/alvaro-grande" style="text-decoration:none"
+          class="fa fa-linkedin"> </a>
+        |
+        <a href="https://www.github.com/Alvinceleste2" style="text-decoration:none" class="fa fa-github"> </a>
+      </h3>
+    </div>
   </div>
 
 </body>
